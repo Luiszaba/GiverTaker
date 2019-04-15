@@ -8,6 +8,7 @@ class SellablesController < ApplicationController
 
 
   def show
+    set_sellable
   end
 
 
@@ -64,6 +65,6 @@ class SellablesController < ApplicationController
 
 
   def sellable_params
-    params.require(:sellable).permit(:title, :address, :price, :description, :completed)
+    params.require(:sellable).permit(:title, :address, :price, :description, :completed, :user_id, images: [])
   end
 end
