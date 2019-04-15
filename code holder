@@ -1,4 +1,0 @@
-  <div class="field">
-    <%= f.label :username %><br />
-    <%= f.username_field :username, autocomplete: "new-username" %>
-  </div>
