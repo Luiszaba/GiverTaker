@@ -4,9 +4,9 @@
       <h2><%= pluralize(sellable.errors.count, "error") %> prohibited this sellable from being saved:</h2>
 
       <ul>
-      <% sellable.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% sellable.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>

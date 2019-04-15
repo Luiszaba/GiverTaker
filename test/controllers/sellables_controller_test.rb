@@ -17,7 +17,7 @@ class SellablesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create sellable" do
     assert_difference('Sellable.count') do
-      post sellables_url, params: { sellable: { address: @sellable.address, completed: @sellable.completed, description: @sellable.description, price: @sellable.price, title: @sellable.title } }
+      post sellables_url, params: {sellable: {address: @sellable.address, completed: @sellable.completed, description: @sellable.description, price: @sellable.price, title: @sellable.title}}
     end
 
     assert_redirected_to sellable_url(Sellable.last)
@@ -34,7 +34,7 @@ class SellablesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update sellable" do
-    patch sellable_url(@sellable), params: { sellable: { address: @sellable.address, completed: @sellable.completed, description: @sellable.description, price: @sellable.price, title: @sellable.title } }
+    patch sellable_url(@sellable), params: {sellable: {address: @sellable.address, completed: @sellable.completed, description: @sellable.description, price: @sellable.price, title: @sellable.title}}
     assert_redirected_to sellable_url(@sellable)
   end
 
